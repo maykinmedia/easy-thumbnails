@@ -68,8 +68,8 @@ class ImageClearableFileInput(test.BaseTest):
         source_filename = self.create_image(self.storage, 'test.jpg')
         widget = widgets.ImageClearableFileInput()
         widget.template_with_thumbnail = (
-            u'%(template)s<br />'
-            u'<a href="%(source_url)s">%(thumb)s</a> FOO'
+            '%(template)s<br />'
+            '<a href="%(source_url)s">%(thumb)s</a> FOO'
         )
         source_file = self.storage.open(source_filename)
         source_file.storage = self.storage
